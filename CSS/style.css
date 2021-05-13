@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: gold;
+}
+header h1{
+	margin: 0;
+	padding: 0;
+	background-color: yellow;
+	font-family: algerian;
+	text-align: center;
+}
+nav{
+	background-color: purple;
+}
+ul{
+	margin: 0;
+	padding: 15px 15px;
+	display: flex;
+	flex-direction: row;
+}
+li{
+	margin: 0 12px;
+	padding: 0;
+	font-size: 28px;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
