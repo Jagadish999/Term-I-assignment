@@ -1,31 +1,41 @@
 body{
-	margin: 0;
+	margin: 15px;
 	padding: 0;
-	background-color: gold;
+	background-color: #868686;
+}
+header{
+	box-shadow: 8px 7px 13px 0px black;
 }
 header h1{
 	margin: 0;
 	padding: 0;
-	background-color: yellow;
 	font-family: algerian;
 	text-align: center;
+	background-color: rgba(100, 150, 115, 0.6);
 }
 nav{
-	background-color: purple;
+	margin: 15px 0 0 0;
+	background-color: rgba(32, 32, 32, 1);
+	
 }
 ul{
 	margin: 0;
 	padding: 15px 15px;
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-end;
 }
 li{
 	margin: 0 12px;
 	padding: 0;
 	font-size: 28px;
 	list-style: none;
+	transition: 0.3s background-color;
 }
 a{
 	text-decoration: none;
 	color: white;
+}
+li:roll{
+	background-color: red;
 }
