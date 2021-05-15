@@ -2,11 +2,12 @@ body{
 	margin: 15px;
 	padding: 0;
 	background-color: #868686;
+	background-attachment: fixed;
 }
 header{
 	box-shadow: 8px 7px 13px 0px black;
 }
-header h1{
+header h1, footer{
 	margin: 0;
 	padding: 0;
 	font-family: algerian;
@@ -38,4 +39,18 @@ a{
 }
 li:roll{
 	background-color: red;
+}
+li.home-1:hover{
+	background-color: red;
+}
+.article-1{
+	margin: 60px;
+	padding: 0;
+	width: 30%;
+	height: 100%;
+	font-size: 20px;
+	background-color: white;
+}
+.content-1{
+	margin: 18px;
 }
