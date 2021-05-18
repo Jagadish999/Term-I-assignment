@@ -10,5 +10,8 @@ The pages are now correctly connected with each other and some improvemrnts in s
 Date: 2021/05/15
 Started adding contents and started to start effects like hover.
 
+Date: 2021/05/16
+Started creating form
+
 
 

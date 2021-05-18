@@ -1,56 +1,87 @@
-body{
-	margin: 15px;
-	padding: 0;
-	background-color: #868686;
-	background-attachment: fixed;
-}
-header{
-	box-shadow: 8px 7px 13px 0px black;
-}
-header h1, footer{
+*{
 	margin: 0;
 	padding: 0;
+	
+}
+body{
+	/*background-color:hsl(0, 0%, 18.82%);*/
 	font-family: algerian;
-	text-align: center;
-	background-color: rgba(100, 150, 115, 0.6);
+	background-color: #4bb9e6;
+
+}
+.header-section{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: black;
+	color: white;
+
+
+}
+header{
+	width: 27%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+}
+img.logo-img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
 }
 nav{
-	margin: 15px 0 0 0;
-	background-color: rgba(32, 32, 32, 1);
-	
+	width: 70%;
+	height: 100%;
 }
 ul{
 	margin: 0;
-	padding: 15px 15px;
+	padding: 0;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: space-evenly;
 }
 li{
-	margin: 0 12px;
-	padding: 0;
-	font-size: 28px;
+	padding: 12px 0;
+	width: 15%;
+	height: 100%;
 	list-style: none;
-	transition: 0.3s background-color;
+	text-align: center;
 }
 a{
 	text-decoration: none;
 	color: white;
+	font-size: 25px;
 }
-li:roll{
+.home, .portfolio, .contact, .cv, .report{
 	background-color: red;
 }
-li.home-1:hover{
-	background-color: red;
+.work-status{
+	/*padding: 9% 0 9% 31%;*/
+	padding: 15% 0;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 6px 28px black;
 }
-.article-1{
-	margin: 60px;
-	padding: 0;
+
+.my-img{
+	margin: 0;
+	height: 200px;
+	width: 245px;
+	border-radius: 50%;
+}
+.biography{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.bio, .img, .about{
 	width: 30%;
-	height: 100%;
-	font-size: 20px;
-	background-color: white;
-}
-.content-1{
-	margin: 18px;
 }
