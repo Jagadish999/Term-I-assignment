@@ -1,12 +1,16 @@
 *{
 	margin: 0;
 	padding: 0;
+	/*box-sizing: border-box;*/
 	
 }
 body{
-	/*background-color:hsl(0, 0%, 18.82%);*/
+	background-color:hsl(0, 0%, 18.82%);
 	font-family: algerian;
-	background-color: #4bb9e6;
+	background-image: url(bg2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 }
 .header-section{
@@ -60,28 +64,67 @@ a{
 	font-size: 25px;
 }
 .home, .portfolio, .contact, .cv, .report{
-	background-color: red;
+	background-color: grey;
 }
 .work-status{
 	/*padding: 9% 0 9% 31%;*/
-	padding: 15% 0;
+	
+	/*background-color: #4bb9e6;*/
+	padding: 8% 0;
 	text-align: center;
 	font-size: 30px;
-	text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 6px 28px black;
-}
-
-.my-img{
-	margin: 0;
-	height: 200px;
-	width: 245px;
-	border-radius: 50%;
+	color: black;
 }
 .biography{
+	margin: 0 12%;
+	padding: 20px 0;
+	/*background-color: #4bb9e6;
+*/
+}
+.content{
+	
+	text-align: center;
+}
+p{
+	margin: 12px;
+}
+.pp{
+	width: 80px;
+	height: 80px;
+	border: 3px solid;
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.demo{
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
-.bio, .img, .about{
-	width: 30%;
+.demo-1{
+	height: 300px;
+	width: 200px;
+	border: 2px solid black;
 }
+.demo-2{
+	height: 300px;
+	width: 400px;
+	border: 2px solid black;
+}
+.demo-3{
+	height: 300px;
+	width: 600px;
+	border: 2px solid black;
+}
+
+
