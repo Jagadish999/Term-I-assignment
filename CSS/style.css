@@ -1,11 +1,12 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-color: rgba(146, 168, 209, 1);
+	background-color: rgba(10, 30, 10, 0.3);
 	font-family: Arial;
 }
+/*Styling of navigation menu started*/
 nav{
-	background-color: rgba(0, 0, 0, 0.55);
+	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
 	height: 100%;
 	padding: 3% 0;
@@ -41,9 +42,10 @@ a{
 	padding: 8% 0;
 	display: block;
 	text-decoration: none;
-	background-color: #fff;
+	background-color: white;
 	color: black;
-	font-size: 40px;
+	font-size: 20px;
+	font-weight: 700;
 	width: 180px;
 	border-radius: 6px;
 	box-shadow: -1px 1px 1px grey,
@@ -105,6 +107,167 @@ li:nth-child(5){
 .ham-nav{
 	display: none;
 }
+
+/*Styling of text of home page started*/
+.content-description{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.content{
+
+}
+.content-heading{
+	background-color: rgba(0, 0, 0, 0.4);
+	margin: 0;
+	padding: 0;
+	font-size: 50px;
+	padding: 30px 0;
+	text-align: center;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1.5px yellow;
+	animation-name: shown-slowly;
+	animation-duration: 3.4s;
+	animation-iteration-count: 1;
+}
+@keyframes shown-slowly{
+	0%{
+		-webkit-text-stroke: 0px yellow;
+	}
+	60%{
+		-webkit-text-stroke: 0px yellow;
+	}
+	100%{
+		-webkit-text-stroke: 1.5px yellow;
+	}
+}
+.content{
+	padding: 40px;
+}
+.content-description{
+	background-color: rgba(0, 0, 0, 0.23);
+}
+.content p{
+	position: relative;
+	font-size: 60px;
+	margin: 0;
+	color: rgba(0, 560, 560, 0.96);
+	font-weight: bolder;
+	text-shadow: -1px -1px 1px #3f9ce6,
+				 -2px -2px 1px #3f9ce6,
+				 -3px -3px 1px #3f9ce6,
+				 -4px -4px 1px #3f9ce6,
+				 -5px -5px 6px rgba(0, 0, 0, 0.7),
+				 -6px -6px 10px rgba(0, 0, 0, 0.6),
+				 -7px -7px 14px rgba(0, 0, 0, 0.5),
+				 -8px -8px 19px rgba(0, 0, 0, 0.4);
+
+}
+.content p:nth-child(1){
+	animation-name: text-appears;
+	animation-duration: 4.2s;
+	animation-iteration-count: 1;
+}
+.content p:nth-child(2){
+	animation-name: text-appears;
+	animation-duration: 4.8s;
+	animation-iteration-count: 1;
+}
+.content p:nth-child(3){
+	animation-name: text-appears;
+	animation-duration: 5.4s;
+	animation-iteration-count: 1;
+}
+.content p:nth-child(4){
+	animation-name: text-appears;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+}
+@keyframes text-appears{
+	0%{
+		opacity: 0;
+	}
+	80%{
+		opacity: 0;
+		right: -120px;
+	}
+	100%{
+		opacity: 1;
+		right: 0px;
+	}
+}
+.text-logo{
+	height: 250px;
+	width: 350px;
+	background-color: grey;
+	margin: 5% 15% 0 15%;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 180px;
+	border-radius: 25px;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	box-shadow: 12px 12px 34px 13px rgba(0, 0, 0, 0.5);
+	pointer-events: none;
+	-webkit-text-fill-color: /*#443c3c*/#7FFF68;
+	-webkit-text-stroke: 2px black;/*needs to be refrenced*/
+	text-shadow: 1px 1px 1px red,
+				 2px 2px 1px red,
+				 3px 3px 1px red,
+				 4px 4px 1px red,
+				 5px 5px 1px red,
+				 6px 6px 1px red,
+				 7px 7px 1px red,
+				 8px 8px 14px rgba(0, 0, 0, 0.7),
+				 9px 9px 18px rgba(0, 0, 0, 0.6),
+				 10px 10px 23px rgba(0, 0, 0, 0.5),
+				 11px 11px 27px rgba(0, 0, 0, 0.4);
+	position: relative;
+	animation-name: rotation-apperance;
+	animation-duration: 8s;
+	animation-iteration-count: 1;
+	overflow: hidden;
+}
+@keyframes rotation-apperance{
+	0%{
+		opacity: 0;
+	}
+	70%{
+		opacity: 0;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 0px;
+		text-shadow: none;
+	}
+	80%{
+		opacity: 1;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 2px black;
+		text-shadow: none;
+
+	}
+	90%{
+		opacity: 1;
+		-webkit-text-fill-color: #7FFF68;
+		-webkit-text-stroke: 2px black;
+		text-shadow: none;
+	}
+	100%{
+		opacity: 1;
+		-webkit-text-stroke: 2px black;
+		-webkit-text-fill-color: #7FFF68;
+		text-shadow: 1px 1px 1px red,
+					 2px 2px 1px red,
+					 3px 3px 1px red,
+					 4px 4px 1px red,
+					 5px 5px 1px red,
+					 6px 6px 1px red,
+					 7px 7px 1px red,
+					 8px 8px 14px rgba(0, 0, 0, 0.7),
+					 9px 9px 18px rgba(0, 0, 0, 0.6),
+					 10px 10px 23px rgba(0, 0, 0, 0.5),
+					 11px 11px 27px rgba(0, 0, 0, 0.4);
+		opacity: 1;
+	}
+}
 @media screen and (max-width: 320px){
 	.nav{
 		display: grid;
@@ -124,3 +287,13 @@ li:nth-child(5){
 	margin: 1.5px;
 	border-radius: 4px;
 }
+
+
+
+
+
+
+
+
+
+
