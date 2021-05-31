@@ -534,17 +534,34 @@ h1, h2, p{
 @media screen and (max-width: 480px){
 	/*Responsiveness of home page*/
 	.nav{
-		display: grid;
-		
+		/*display: grid;*/
 	}
 	.main-nav{
 		display: none;
+	}
+	.main-nav ul{
+		display: flex;
+		flex-direction: column;
+	}
+	.main-nav ul li:nth-child(1), .main-nav ul li:nth-child(2), .main-nav ul li:nth-child(3),
+	.main-nav ul li:nth-child(4), .main-nav ul li:nth-child(5){
+		animation: none;
+		margin-bottom: 12px;
+
+	}
+	.main-nav ul li a{
+		animation: none;
+		box-shadow: none;
+		width: 80%;
 	}
 	.ham-nav{
 		padding: 3% 0;
 		display: grid;
 		grid-template-rows: 1fr 1fr 1fr;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	#ham-2{
+		display: none;
 	}
 	.first-line, .second-line, .third-line{
 	background-color: black;
