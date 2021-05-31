@@ -11,14 +11,14 @@ nav{
 	height: 100%;
 	padding: 3% 0;
 }
-ul{
+.main-nav ul{
 	margin: 0;
 	padding: 0 0 0 15%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	justify-content: space-between;
 }
-li{
+.main-nav ul li{
 	position: relative;
 	list-style: none;
 	text-align: center;
@@ -61,27 +61,27 @@ a{
 				-13px 20px 13px rgba(12,12,12,0.65),
 				-14px 21px 13px rgba(12,12,12,0.65);
 }
-li:nth-child(1){
+.main-nav ul li:nth-child(1){
 	animation-name: appears;
 	animation-duration: 0.6s;
 	animation-iteration-count: 1;
 }
-li:nth-child(2){
+.main-nav ul li:nth-child(2){
 	animation-name: appears;
 	animation-duration: 1s;
 	animation-iteration-count: 1;
 }
-li:nth-child(3){
+.main-nav ul li:nth-child(3){
 	animation-name: appears;
 	animation-duration: 1.4s;
 	animation-iteration-count: 1;
 }
-li:nth-child(4){
+.main-nav ul li:nth-child(4){
 	animation-name: appears;
 	animation-duration: 1.8s;
 	animation-iteration-count: 1;
 }
-li:nth-child(5){
+.main-nav ul li:nth-child(5){
 	animation-name: appears;
 	animation-duration: 2.2s;
 	animation-iteration-count: 1;
@@ -401,7 +401,7 @@ li:nth-child(5){
 }
 .contact-main-container{
 	display: grid;
-	grid-template-columns: 45% 45%;
+	grid-template-columns: 48% 48%;
 	justify-content: space-evenly;
 	margin: 0 0 15px 0;
 }
@@ -488,6 +488,33 @@ img{
 	height: 40px;
 	text-transform: uppercase;
 }
+/*Styling od CV page*/
+h2{
+	font-size: 30px;
+}
+p{
+	font-size: 20px;
+}
+.cv{
+	padding: 0 30px;
+}
+.cv-heading h1:nth-child(1){
+	text-align: center;
+	font-size: 45px;
+}
+.cv-heading h2:nth-child(2){
+	text-align: center;
+}
+.cv-heading h2:nth-child(3){
+	text-align: center;
+}
+h1, h2, p{
+	margin: 0;
+	padding: 0;
+}
+.cv div{
+	margin: 0 0 30px 0;
+}
 
 
 
@@ -504,9 +531,8 @@ img{
 
 
 
-
-
-@media screen and (max-width: 320px){
+@media screen and (max-width: 480px){
+	/*Responsiveness of home page*/
 	.nav{
 		display: grid;
 		
@@ -515,8 +541,10 @@ img{
 		display: none;
 	}
 	.ham-nav{
+		padding: 3% 0;
 		display: grid;
 		grid-template-rows: 1fr 1fr 1fr;
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 	.first-line, .second-line, .third-line{
 	background-color: black;
@@ -525,4 +553,99 @@ img{
 	margin: 1.5px;
 	border-radius: 4px;
 	}
+	.content-heading{
+		font-size: 32px;
+		animation: none;
+	}
+	.content-description{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.content p{
+		font-size: 30px;
+		animation: none;
+	}
+	.transparent-glass{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 3%;
+	}
+	.text-logo{
+		margin: auto;
+		display: block;
+		font-size: 110px;
+		height: 150px;
+		width: 250px;
+		animation: none;
+
+	}
+	.content p:nth-child(1){
+		animation: none;
+	}
+	.content p:nth-child(2){
+		animation: none;
+	}
+	.content p:nth-child(3){
+		animation: none;
+	}
+	.content p:nth-child(4){
+		animation: none;
+	}
+
+
+	/*Responsiveness of portfolio page*/
+	.work-demonstration-heading{
+		font-size: 30px;
+	}
+	.work-demonstration-heading span{
+		animation: none;
+	}
+	.work-demonstration{
+		display: flex;
+		flex-direction: column;
+	}
+
+
+	/*Responsiveness of contact page*/
+	.form-card-container h2 span{
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.contact-main-container{
+		display: flex;
+		flex-direction: column;
+	}
+	fieldset{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%;
+		width: 50%;
+		animation: none;
+	}
+	.contact-card{
+		animation: none;
+	}
+	.contact-card p{
+		font-size: 12px;
+	}
+	.form-section h3, .transparent-card h3{
+		animation: none;
+	}
+	.form-card-container h2 span{
+		animation: none;
+	}
+
+	/*Styling of cv page*/
+	.cv h2{
+		font-size: 18px;
+	}
+	.cv p{
+		font-size: 13px;
+	}
+
 }
