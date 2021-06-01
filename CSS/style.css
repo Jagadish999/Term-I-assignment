@@ -571,7 +571,7 @@ h1, h2, p{
 	border-radius: 4px;
 	}
 	.content-heading{
-		font-size: 32px;
+		font-size: 35px;
 		animation: none;
 	}
 	.content-description{
@@ -580,7 +580,7 @@ h1, h2, p{
 		flex-wrap: wrap;
 	}
 	.content p{
-		font-size: 30px;
+		font-size: 33px;
 		animation: none;
 	}
 	.transparent-glass{
