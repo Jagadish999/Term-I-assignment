@@ -1,5 +1,5 @@
 body{
-	margin: 30px;
+	margin: 20px;
 	padding: 0;
 	background-color: rgba(33, 33, 33, 0.6);
 	font-family: Arial;
@@ -116,13 +116,10 @@ a{
 	grid-gap: 30px;
 }
 .content{
-	background-color: rgba(83, 82, 205, 1);
+	background-color: rgba(33, 33, 33, 0.9);
 	border-radius: 12px;
-	
 }
 .content-heading{
-	/*background-color: rgba(0, 0, 0, 0.4);*/
-	/*background-color: rgba(33, 33, 33, 1);*/
 	background-color: rgba(33, 33, 33, 0.9);
 	border-radius: 12px;
 	margin: 20px 0;
@@ -151,10 +148,6 @@ a{
 	padding: 40px;
 	background-color: rgba(33, 33, 33, 0.9);
 	overflow: hidden;
-}
-.content-description{
-	/*background-color: rgba(0, 0, 0, 0.23);*/
-
 }
 .content p{
 	position: relative;
@@ -222,7 +215,6 @@ a{
 	border-left: 1px solid white;
 	border-top: 1px solid white;
 	box-shadow: 12px 12px 34px 13px rgba(0, 0, 0, 0.5);
-	pointer-events: none;
 	-webkit-text-fill-color: #7FFF68;
 	-webkit-text-stroke: 2px black;/*needs to be refrenced*/
 	text-shadow: 1px 1px 1px red,
@@ -241,11 +233,6 @@ a{
 	animation-duration: 8s;
 	animation-iteration-count: 1;
 	overflow: hidden;
-}
-.text-logo span{
-	display: block;
-	margin-top: auto;
-	margin-bottom: auto;
 }
 @keyframes logo-apperance{
 	0%{
@@ -378,7 +365,7 @@ a{
 
 	}
 	.content p{
-		font-size: 33px;
+		font-size: 35px;
 		animation: none;
 	}
 
