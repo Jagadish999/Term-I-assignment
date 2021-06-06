@@ -14,7 +14,7 @@ nav{
 .main-nav ul{
 	margin: 0;
 	padding: 0 0 0 15%;
-	display: grid;
+	display: grid;/*grid properties in W3school (N.A, N.A)*/
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	justify-content: space-between;
 }
@@ -48,7 +48,7 @@ a{
 	font-weight: 700;
 	width: 180px;
 	border-radius: 6px;
-	box-shadow: -1px 1px 1px grey,
+	box-shadow: -1px 1px 1px grey,/*(Ryan, 2018) idea of creating 3d text with multiple shadows*/
 				-2px 2px 1px grey,
 				-3px 3px 1px grey,
 				-4px 4px 1px grey,
@@ -159,7 +159,7 @@ a{
 				 -5px -5px 6px rgba(0, 0, 0, 0.7),
 				 -6px -6px 10px rgba(0, 0, 0, 0.6),
 				 -7px -7px 14px rgba(0, 0, 0, 0.5),
-				 -8px -8px 19px rgba(0, 0, 0, 0.4);
+				 -8px -8px 19px rgba(0, 0, 0, 0.4);/*(Ryan, 2018)*/
 
 }
 .content p:nth-child(1){
@@ -209,7 +209,7 @@ a{
 	box-shadow: 12px 12px 34px 13px rgba(0, 0, 0, 0.5);
 	pointer-events: none;
 	-webkit-text-fill-color: #7FFF68;
-	-webkit-text-stroke: 2px black;/*needs to be refrenced*/
+	-webkit-text-stroke: 2px black;/*(N.A, N.A) available on:https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke)*/
 	text-shadow: 1px 1px 1px red,
 				 2px 2px 1px red,
 				 3px 3px 1px red,
@@ -273,7 +273,7 @@ a{
 					 10px 10px 23px rgba(0, 0, 0, 0.5),
 					 11px 11px 27px rgba(0, 0, 0, 0.4);
 		opacity: 1;
-	}
+	}/*(kjeznach, NA) concept of word animation*/
 }
 
 /*Styling of portfolio page*/
@@ -666,3 +666,19 @@ h1, h2, p{
 	}
 
 }
+
+
+
+
+
+/*
+Refrences:
+
+Ryan (2018) 3D Text Effect in CSS/Ryan Web Tech, Youtube, 
+Available: https://www.youtube.com/watch?v=RPF-Dt737BA&t=218s(2021)
+
+N.A (N.A) Website. Available: https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke
+
+N.A (N.A) website. Available: https://www.w3schools.com/css/css_grid.asp;
+
+*/
