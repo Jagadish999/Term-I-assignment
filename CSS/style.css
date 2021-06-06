@@ -1,15 +1,19 @@
 body{
-	margin: 0;
+	margin: 20px;
 	padding: 0;
-	background-color: rgba(10, 30, 10, 0.3);
+	background-color: rgba(33, 33, 33, 0.6);
 	font-family: Arial;
-}
-/*Styling of navigation menu started*/
+}/*shady background with some margin*/
+
+
+/*Styling of navigation menu for all pages*/
 nav{
-	background-color: rgba(0, 0, 0, 0.5);
+	padding: 3% 0;
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
 	width: 100%;
 	height: 100%;
-	padding: 3% 0;
+	
 }
 .main-nav ul{
 	margin: 0;
@@ -17,27 +21,14 @@ nav{
 	display: grid;/*grid properties in W3school (N.A, N.A)*/
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	justify-content: space-between;
-}
+}/*Ul with some padding and lists divided in columns*/
+
 .main-nav ul li{
+	margin: 0 12px;
 	position: relative;
 	list-style: none;
 	text-align: center;
-	margin: 0 12px;
-}
-@keyframes appears{
-	0%{
-		opacity: 0;
-		left: -25px;
-	}
-	60%{
-		opacity: 0;
-		left: -25px;
-	}
-	100%{
-		opacity: 1;
-		left: 0px;
-	}
-}
+}/*overal styling of lists with relative position for movement*/
 a{
 	padding: 8% 0;
 	display: block;
@@ -45,7 +36,7 @@ a{
 	background-color: white;
 	color: black;
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: bolder;
 	width: 180px;
 	border-radius: 6px;
 	box-shadow: -1px 1px 1px grey,/*(Ryan, 2018) idea of creating 3d text with multiple shadows*/
@@ -60,7 +51,8 @@ a{
 				-12px 19px 13px rgba(12,12,12,0.65),
 				-13px 20px 13px rgba(12,12,12,0.65),
 				-14px 21px 13px rgba(12,12,12,0.65);
-}
+}/*lists are edited from its child element*/
+
 .main-nav ul li:nth-child(1){
 	animation-name: appears;
 	animation-duration: 0.6s;
@@ -85,14 +77,30 @@ a{
 	animation-name: appears;
 	animation-duration: 2.2s;
 	animation-iteration-count: 1;
-}
+}/*list moving from left to right*/
+
+@keyframes appears{
+	0%{
+		opacity: 0;
+		left: -25px;
+	}
+	60%{
+		opacity: 0;
+		left: -25px;
+	}
+	100%{
+		opacity: 1;
+		left: 0px;
+	}
+}/*movement from left to right*/
 
 .animated-menu{
 	animation-name: selected-list;
 	animation-delay: 2.2s;
 	animation-duration: 0.8s;
 	animation-iteration-count: infinite;
-}
+}/*Jumping animation for selected page*/
+
 @keyframes selected-list{
 	0%{
 		transform: translate(0, 0);
@@ -112,13 +120,16 @@ a{
 .content-description{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
 }
 .content{
-
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
 }
 .content-heading{
-	background-color: rgba(0, 0, 0, 0.4);
-	margin: 0;
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
+	margin: 20px 0;
 	padding: 0;
 	font-size: 50px;
 	padding: 30px 0;
@@ -142,10 +153,10 @@ a{
 }
 .content{
 	padding: 40px;
-}
-.content-description{
-	background-color: rgba(0, 0, 0, 0.23);
-}
+	background-color: rgba(33, 33, 33, 0.9);
+	overflow: hidden;
+}/*3d texts container*/
+
 .content p{
 	position: relative;
 	font-size: 60px;
@@ -160,8 +171,8 @@ a{
 				 -6px -6px 10px rgba(0, 0, 0, 0.6),
 				 -7px -7px 14px rgba(0, 0, 0, 0.5),
 				 -8px -8px 19px rgba(0, 0, 0, 0.4);/*(Ryan, 2018)*/
+}/*3D texts with shadow*/
 
-}
 .content p:nth-child(1){
 	animation-name: text-appears;
 	animation-duration: 4.2s;
@@ -181,7 +192,7 @@ a{
 	animation-name: text-appears;
 	animation-duration: 6s;
 	animation-iteration-count: 1;
-}
+}/*animation for 3D texts*/
 @keyframes text-appears{
 	0%{
 		opacity: 0;
@@ -195,11 +206,18 @@ a{
 		right: 0px;
 	}
 }
+
+.transparent-glass{
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
+}
+
 .text-logo{
+	display: block;
+	margin: 12% auto;
 	height: 250px;
 	width: 350px;
 	background-color: grey;
-	margin: 5% 15% 0 15%;
 	text-align: center;
 	font-weight: bolder;
 	font-size: 180px;
@@ -207,7 +225,6 @@ a{
 	border-left: 1px solid white;
 	border-top: 1px solid white;
 	box-shadow: 12px 12px 34px 13px rgba(0, 0, 0, 0.5);
-	pointer-events: none;
 	-webkit-text-fill-color: #7FFF68;
 	-webkit-text-stroke: 2px black;/*(N.A, N.A) available on:https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke)*/
 	text-shadow: 1px 1px 1px red,
@@ -227,6 +244,7 @@ a{
 	animation-iteration-count: 1;
 	overflow: hidden;
 }
+
 @keyframes logo-apperance{
 	0%{
 		opacity: 0;
@@ -533,8 +551,22 @@ h1, h2, p{
 
 @media screen and (max-width: 480px){
 	/*Responsiveness of home page*/
-	.nav{
-		/*display: grid;*/
+	body{
+		margin: 12px;
+		animation-name: opacity;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+	}
+	@keyframes opacity{
+		0%{
+			opacity: 0;
+		}
+		40%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
 	}
 	.main-nav{
 		display: none;
@@ -545,9 +577,7 @@ h1, h2, p{
 	}
 	.main-nav ul li:nth-child(1), .main-nav ul li:nth-child(2), .main-nav ul li:nth-child(3),
 	.main-nav ul li:nth-child(4), .main-nav ul li:nth-child(5){
-		animation: none;
 		margin-bottom: 12px;
-
 	}
 	.main-nav ul li a{
 		animation: none;
@@ -555,10 +585,12 @@ h1, h2, p{
 		width: 80%;
 	}
 	.ham-nav{
-		padding: 3% 0;
+		padding: 3%;
+		margin-bottom: 15px;
 		display: grid;
 		grid-template-rows: 1fr 1fr 1fr;
 		background-color: rgba(0, 0, 0, 0.6);
+		border-radius: 3px;
 	}
 	#ham-2{
 		display: none;
@@ -572,7 +604,6 @@ h1, h2, p{
 	}
 	.content-heading{
 		font-size: 35px;
-		animation: none;
 	}
 	.content-description{
 		display: flex;
@@ -584,34 +615,16 @@ h1, h2, p{
 		animation: none;
 	}
 	.transparent-glass{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 0;
-		margin-bottom: 3%;
+		padding-bottom: 8%;
 	}
 	.text-logo{
-		margin: auto;
+
 		display: block;
 		font-size: 110px;
 		height: 150px;
 		width: 250px;
-		animation: none;
 
 	}
-	.content p:nth-child(1){
-		animation: none;
-	}
-	.content p:nth-child(2){
-		animation: none;
-	}
-	.content p:nth-child(3){
-		animation: none;
-	}
-	.content p:nth-child(4){
-		animation: none;
-	}
-
 
 	/*Responsiveness of portfolio page*/
 	.work-demonstration-heading{
