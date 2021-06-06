@@ -13,5 +13,7 @@ Started adding contents and started to start effects like hover.
 Date: 2021/05/16
 Started creating form
 
+Date 2021/06/06
+completed all designs
 
 
