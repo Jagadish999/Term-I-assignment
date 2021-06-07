@@ -655,14 +655,11 @@ h1, h2, p{
 
 	/*Responsiveness of portfolio page*/
 	.work-demonstration-heading{
-		font-size: 30px;
+		font-size: 35px;
 	}
-	.work-demonstration-heading span{
-		animation: none;
-	}
-	.work-demonstration{
-		display: flex;
-		flex-direction: column;
+	.project{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 
 
