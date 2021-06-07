@@ -311,19 +311,7 @@ a{
 	animation-name: rotation-apperance;
 	animation-duration: 4.4s;
 	animation-iteration-count: 1;
-}
-@keyframes rotation-apperance{
-	0%{
-		opacity: 0;
-	}
-	50%{
-		opacity: 0;
-		transform: rotateY(180deg);
-	}
-	100%{
-		opacity: 1;
-		transform: rotateX(0deg);
-	}
+
 }
 .project{
 	display: grid;
@@ -421,6 +409,19 @@ a{
 	}
 	100%{
 		opacity: 1;
+	}
+}
+@keyframes rotation-apperance{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+		transform: rotateY(180deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateX(0deg);
 	}
 }
 .project div:hover{
@@ -656,9 +657,12 @@ h1, h2, p{
 	.work-demonstration-heading{
 		font-size: 35px;
 	}
+
 	.project{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-gap: auto;
+
 	}
 
 
