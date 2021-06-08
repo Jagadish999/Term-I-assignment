@@ -1,0 +1,721 @@
+body{
+	margin: 20px;
+	padding: 0;
+	background-color: rgba(33, 33, 33, 0.6);
+	font-family: Arial;
+}/*shady background with some margin*/
+
+
+/*Styling of navigation menu for all pages*/
+nav{
+	padding: 3% 0;
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
+	width: 100%;
+	height: 100%;
+	
+}
+.main-nav ul{
+	margin: 0;
+	padding: 0 0 0 15%;
+	display: grid;/*grid properties in W3school (N.A, N.A)*/
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	justify-content: space-between;
+}/*Ul with some padding and lists divided in columns*/
+
+.main-nav ul li{
+	margin: 0 12px;
+	position: relative;
+	list-style: none;
+	text-align: center;
+}/*overal styling of lists with relative position for movement*/
+a{
+	padding: 8% 0;
+	display: block;
+	text-decoration: none;
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	font-weight: bolder;
+	width: 180px;
+	border-radius: 6px;
+	box-shadow: -1px 1px 1px grey,/*(Ryan, 2018) idea of creating 3d text with multiple shadows*/
+				-2px 2px 1px grey,
+				-3px 3px 1px grey,
+				-4px 4px 1px grey,
+				-5px 5px 1px grey,
+				-6px 6px 1px grey,
+				-7px 7px 1px grey,
+				-8px 8px 1px grey,
+				-11px 18px 13px rgba(12,12,12,0.65),
+				-12px 19px 13px rgba(12,12,12,0.65),
+				-13px 20px 13px rgba(12,12,12,0.65),
+				-14px 21px 13px rgba(12,12,12,0.65);
+}/*lists are edited from its child element*/
+
+.main-nav ul li:nth-child(1){
+	animation-name: appears;
+	animation-duration: 0.6s;
+	animation-iteration-count: 1;
+}
+.main-nav ul li:nth-child(2){
+	animation-name: appears;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+.main-nav ul li:nth-child(3){
+	animation-name: appears;
+	animation-duration: 1.4s;
+	animation-iteration-count: 1;
+}
+.main-nav ul li:nth-child(4){
+	animation-name: appears;
+	animation-duration: 1.8s;
+	animation-iteration-count: 1;
+}
+.main-nav ul li:nth-child(5){
+	animation-name: appears;
+	animation-duration: 2.2s;
+	animation-iteration-count: 1;
+}/*list moving from left to right*/
+
+@keyframes appears{
+	0%{
+		opacity: 0;
+		left: -25px;
+	}
+	60%{
+		opacity: 0;
+		left: -25px;
+	}
+	100%{
+		opacity: 1;
+		left: 0px;
+	}
+}/*movement from left to right*/
+
+.animated-menu{
+	animation-name: selected-list;
+	animation-delay: 2.2s;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+}/*Jumping animation for selected page*/
+
+@keyframes selected-list{
+	0%{
+		transform: translate(0, 0);
+	}
+	50%{
+		transform: translate(0, -20px);
+	}
+	100%{
+		transform: translate(0, 0);
+	}
+}
+.ham-nav{
+	display: none;
+}
+
+/*Styling of text of home page started*/
+.content-description{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+.content{
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
+}
+.content-heading{
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
+	margin: 20px 0;
+	padding: 0;
+	font-size: 50px;
+	padding: 30px 0;
+	text-align: center;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1.5px yellow;
+	animation-name: shown-slowly;
+	animation-duration: 3.4s;
+	animation-iteration-count: 1;
+}
+@keyframes shown-slowly{
+	0%{
+		-webkit-text-stroke: 0px yellow;
+	}
+	60%{
+		-webkit-text-stroke: 0px yellow;
+	}
+	100%{
+		-webkit-text-stroke: 1.5px yellow;
+	}
+}
+.content{
+	padding: 40px;
+	background-color: rgba(33, 33, 33, 0.9);
+	overflow: hidden;
+}/*3d texts container*/
+
+.content p{
+	position: relative;
+	font-size: 60px;
+	margin: 0;
+	color: rgba(0, 560, 560, 0.96);
+	font-weight: bolder;
+	text-shadow: -1px -1px 1px #3f9ce6,
+				 -2px -2px 1px #3f9ce6,
+				 -3px -3px 1px #3f9ce6,
+				 -4px -4px 1px #3f9ce6,
+				 -5px -5px 6px rgba(0, 0, 0, 0.7),
+				 -6px -6px 10px rgba(0, 0, 0, 0.6),
+				 -7px -7px 14px rgba(0, 0, 0, 0.5),
+				 -8px -8px 19px rgba(0, 0, 0, 0.4);/*(Ryan, 2018)*/
+}/*3D texts with shadow*/
+
+.content p:nth-child(1){
+	animation-name: text-appears;
+	animation-duration: 4.2s;
+	animation-iteration-count: 1;
+}
+.content p:nth-child(2){
+	animation-name: text-appears;
+	animation-duration: 4.8s;
+	animation-iteration-count: 1;
+}
+.content p:nth-child(3){
+	animation-name: text-appears;
+	animation-duration: 5.4s;
+	animation-iteration-count: 1;
+}
+.content p:nth-child(4){
+	animation-name: text-appears;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+}/*animation for 3D texts*/
+@keyframes text-appears{
+	0%{
+		opacity: 0;
+	}
+	80%{
+		opacity: 0;
+		right: -120px;
+	}
+	100%{
+		opacity: 1;
+		right: 0px;
+	}
+}
+
+.transparent-glass{
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
+}
+
+.text-logo{
+	display: block;
+	margin: 12% auto;
+	height: 250px;
+	width: 350px;
+	background-color: grey;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 180px;
+	border-radius: 25px;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	box-shadow: 12px 12px 34px 13px rgba(0, 0, 0, 0.5);
+	-webkit-text-fill-color: #7FFF68;
+	-webkit-text-stroke: 2px black;/*(N.A, N.A) available on:https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke)*/
+	text-shadow: 1px 1px 1px red,
+				 2px 2px 1px red,
+				 3px 3px 1px red,
+				 4px 4px 1px red,
+				 5px 5px 1px red,
+				 6px 6px 1px red,
+				 7px 7px 1px red,
+				 8px 8px 14px rgba(0, 0, 0, 0.7),
+				 9px 9px 18px rgba(0, 0, 0, 0.6),
+				 10px 10px 23px rgba(0, 0, 0, 0.5),
+				 11px 11px 27px rgba(0, 0, 0, 0.4);
+	position: relative;
+	animation-name: logo-apperance;
+	animation-duration: 8s;
+	animation-iteration-count: 1;
+	overflow: hidden;
+}
+
+@keyframes logo-apperance{
+	0%{
+		opacity: 0;
+	}
+	65%{
+		opacity: 0;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 0px;
+		text-shadow: none;
+	}
+	75%{
+		opacity: 1;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 0px;
+		text-shadow: none;
+
+	}
+	80%{
+		opacity: 1;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 2px black;
+		text-shadow: none;
+
+	}
+	90%{
+		opacity: 1;
+		-webkit-text-fill-color: #7FFF68;
+		-webkit-text-stroke: 2px black;
+		text-shadow: none;
+	}
+	100%{
+		opacity: 1;
+		-webkit-text-stroke: 2px black;
+		-webkit-text-fill-color: #7FFF68;
+		text-shadow: 1px 1px 1px red,
+					 2px 2px 1px red,
+					 3px 3px 1px red,
+					 4px 4px 1px red,
+					 5px 5px 1px red,
+					 6px 6px 1px red,
+					 7px 7px 1px red,
+					 8px 8px 14px rgba(0, 0, 0, 0.7),
+					 9px 9px 18px rgba(0, 0, 0, 0.6),
+					 10px 10px 23px rgba(0, 0, 0, 0.5),
+					 11px 11px 27px rgba(0, 0, 0, 0.4);
+		opacity: 1;
+	}/*(kjeznach, NA) concept of word animation*/
+}
+
+/*Styling of portfolio page*/
+.work-demonstration-heading{
+	margin: 20px 0;
+	padding: 30px 0;
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
+	text-align: center;
+	font-size: 50px;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px yellow;
+}
+.work-demonstration-heading span{
+	display: block;
+	position: relative;
+	animation-name: rotation-apperance;
+	animation-duration: 4.4s;
+	animation-iteration-count: 1;
+
+}
+.project{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	text-align: center;
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
+	padding: 20px;
+
+}
+.project div{
+	width: 150px;
+	background-color: rgba(193, 233, 133, 0.6);
+	margin: 10px;
+	padding: 80px 0;
+	transition: transform 0.4s, color 0.4s;
+}
+.project div:nth-child(1){
+	animation-name: work-appears;
+	animation-duration: 5.8s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(2){
+	animation-name: work-appears;
+	animation-duration: 5.9s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(3){
+	animation-name: work-appears;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(4){
+	animation-name: work-appears;
+	animation-duration: 6.1s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(5){
+	animation-name: work-appears;
+	animation-duration: 6.2s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(6){
+	animation-name: work-appears;
+	animation-duration: 6.3s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(7){
+	animation-name: work-appears;
+	animation-duration: 6.4s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(8){
+	animation-name: work-appears;
+	animation-duration: 6.5s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(9){
+	animation-name: work-appears;
+	animation-duration: 6.6s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(10){
+	animation-name: work-appears;
+	animation-duration: 6.7s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(11){
+	animation-name: work-appears;
+	animation-duration: 6.8s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(12){
+	animation-name: work-appears;
+	animation-duration: 6.9s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(13){
+	animation-name: work-appears;
+	animation-duration: 7s;
+	animation-iteration-count: 1;
+}
+.project div:nth-child(14){
+	animation-name: work-appears;
+	animation-duration: 7.1s;
+	animation-iteration-count: 1;
+}
+@keyframes work-appears{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes rotation-apperance{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+		transform: rotateY(180deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}
+.project div:hover{
+	transform: scale(1.1, 1.1);
+	color: white;
+}
+/*Styling of contact page starts*/
+.form-card-container h2{
+	margin: 0;
+	padding: 30px 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	font-size: 50px;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px yellow;
+}
+.form-card-container h2 span{
+	position: relative;
+	animation-name: text-appears;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+}
+.contact-main-container{
+	display: grid;
+	grid-template-columns: 48% 48%;
+	justify-content: space-evenly;
+	margin: 0 0 15px 0;
+}
+.form-section h3{
+	text-align: center;
+	font-size: 25px;
+	animation-name: slowly-viewed;
+	animation-duration: 3.5s;
+	animation-iteration-count: 1;
+}
+fieldset{
+	background-color: rgba(25, 25, 25, 0.8);
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-bottom: none;
+	border-right: none;
+	border-radius: 40px;
+	width: 80%;
+	color: skyblue;
+	box-shadow: 12px 12px 18px rgba(0, 0, 0, 0.5);
+	position: relative;
+	animation-name: appears;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+}
+fieldset div{
+	margin: 5px 0 12px 0;
+	text-align: center;
+}
+input{
+	width: 80%;
+	height: 25px;
+}
+fieldset div span{
+	display: inline-block;
+}
+.transparent-card h3{
+	text-align: center;
+	font-size: 25px;
+	animation-name: slowly-viewed;
+	animation-duration: 3.8s;
+	animation-iteration-count: 1;
+}
+
+.contact-card{
+	margin: 0;
+	padding: 0 0 15px 0;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	width: 50%;
+	display: block;
+	margin: 15px auto;
+	border-radius: 22px;
+	background-color: rgba(25, 25, 25, 0.75);
+	box-shadow: 12px 12px 18px rgba(0, 0, 0, 0.5);
+	position: relative;
+	animation-name: text-appears;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+}
+img{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	display: block;
+	margin: 12px auto 0 auto;
+	border: 5px solid grey;
+}
+.contact-card h4{
+	margin: 0 13px;
+	padding: 0;
+	color: skyblue;
+}
+.contact-card p{
+	margin: 0 13px 13px 13px;
+	padding: 0;
+	color: white;
+}
+.profile-name{
+	text-align: center;
+}
+.submit{
+	width: 20%;
+	height: 40px;
+	text-transform: uppercase;
+}
+/*Styling od CV page*/
+h2{
+	font-size: 30px;
+}
+p{
+	font-size: 20px;
+}
+.cv{
+	padding: 0 30px;
+}
+.cv-heading h1:nth-child(1){
+	text-align: center;
+	font-size: 45px;
+}
+.cv-heading h2:nth-child(2){
+	text-align: center;
+}
+.cv-heading h2:nth-child(3){
+	text-align: center;
+}
+h1, h2, p{
+	margin: 0;
+	padding: 0;
+}
+.cv div{
+	margin: 0 0 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px){
+	/*Responsiveness of home page*/
+	body{
+		margin: 12px;
+		animation-name: opacity;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+	}
+	@keyframes opacity{
+		0%{
+			opacity: 0;
+		}
+		40%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
+	}
+	.main-nav{
+		display: none;
+	}
+	.main-nav ul{
+		display: flex;
+		flex-direction: column;
+	}
+	.main-nav ul li:nth-child(1), .main-nav ul li:nth-child(2), .main-nav ul li:nth-child(3),
+	.main-nav ul li:nth-child(4), .main-nav ul li:nth-child(5){
+		margin-bottom: 12px;
+	}
+	.main-nav ul li a{
+		animation: none;
+		box-shadow: none;
+		width: 80%;
+	}
+	.ham-nav{
+		padding: 3%;
+		margin-bottom: 15px;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		background-color: rgba(0, 0, 0, 0.6);
+		border-radius: 3px;
+	}
+	#ham-2{
+		display: none;
+	}
+	.first-line, .second-line, .third-line{
+	background-color: black;
+	width: 30px;
+	height: 6px;
+	margin: 1.5px;
+	border-radius: 4px;
+	}
+	.content-heading{
+		font-size: 35px;
+	}
+	.content-description{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.content p{
+		font-size: 33px;
+		animation: none;
+	}
+	.transparent-glass{
+		padding-bottom: 8%;
+	}
+	.text-logo{
+
+		display: block;
+		font-size: 110px;
+		height: 150px;
+		width: 250px;
+
+	}
+
+	/*Responsiveness of portfolio page*/
+	.work-demonstration-heading{
+		font-size: 35px;
+	}
+	.project{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+
+	/*Responsiveness of contact page*/
+	.form-card-container h2 span{
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.contact-main-container{
+		display: flex;
+		flex-direction: column;
+	}
+	fieldset{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%;
+		width: 50%;
+		animation: none;
+	}
+	.contact-card{
+		animation: none;
+	}
+	.contact-card p{
+		font-size: 12px;
+	}
+	.form-section h3, .transparent-card h3{
+		animation: none;
+	}
+	.form-card-container h2 span{
+		animation: none;
+	}
+
+	/*Styling of cv page*/
+	.cv h2{
+		font-size: 18px;
+	}
+	.cv p{
+		font-size: 13px;
+	}
+
+}
+
+
+
+
+
+/*
+Refrences:
+
+Ryan (2018) 3D Text Effect in CSS/Ryan Web Tech, Youtube, 
+Available: https://www.youtube.com/watch?v=RPF-Dt737BA&t=218s(2021)
+
+N.A (N.A) Website. Available: https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke
+
+N.A (N.A) website. Available: https://www.w3schools.com/css/css_grid.asp;
+
+*/
