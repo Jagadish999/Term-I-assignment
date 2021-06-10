@@ -116,320 +116,121 @@ a{
 	display: none;
 }
 
-/*Styling of text of home page started*/
-.content-description{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
-}
-.content{
-	background-color: rgba(33, 33, 33, 0.9);
-	border-radius: 12px;
-}
-.content-heading{
-	background-color: rgba(33, 33, 33, 0.9);
-	border-radius: 12px;
-	margin: 20px 0;
-	padding: 0;
-	font-size: 50px;
-	padding: 30px 0;
-	text-align: center;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 1.5px yellow;
-	animation-name: shown-slowly;
-	animation-duration: 3.4s;
-	animation-iteration-count: 1;
-}
-@keyframes shown-slowly{
-	0%{
-		-webkit-text-stroke: 0px yellow;
-	}
-	60%{
-		-webkit-text-stroke: 0px yellow;
-	}
-	100%{
-		-webkit-text-stroke: 1.5px yellow;
-	}
-}
-.content{
-	padding: 40px;
-	background-color: rgba(33, 33, 33, 0.9);
-	overflow: hidden;
-}/*3d texts container*/
 
-.content p{
-	position: relative;
-	font-size: 60px;
+/*Styling of contact page starts*/
+.page-heading{
+	background-color: rgba(33, 33, 33, 0.9);
+	margin-top: 20px;
+	border-radius: 12px;
+}
+
+
+.page-heading h2{
+	font-size: 50px;
 	margin: 0;
-	color: rgba(0, 560, 560, 0.96);
-	font-weight: bolder;
-	text-shadow: -1px -1px 1px #3f9ce6,
-				 -2px -2px 1px #3f9ce6,
-				 -3px -3px 1px #3f9ce6,
-				 -4px -4px 1px #3f9ce6,
-				 -5px -5px 6px rgba(0, 0, 0, 0.7),
-				 -6px -6px 10px rgba(0, 0, 0, 0.6),
-				 -7px -7px 14px rgba(0, 0, 0, 0.5),
-				 -8px -8px 19px rgba(0, 0, 0, 0.4);/*(Ryan, 2018)*/
-}/*3D texts with shadow*/
-
-.content p:nth-child(1){
-	animation-name: text-appears;
-	animation-duration: 4.2s;
-	animation-iteration-count: 1;
-}
-.content p:nth-child(2){
-	animation-name: text-appears;
-	animation-duration: 4.8s;
-	animation-iteration-count: 1;
-}
-.content p:nth-child(3){
-	animation-name: text-appears;
-	animation-duration: 5.4s;
-	animation-iteration-count: 1;
-}
-.content p:nth-child(4){
-	animation-name: text-appears;
-	animation-duration: 6s;
-	animation-iteration-count: 1;
-}/*animation for 3D texts*/
-@keyframes text-appears{
-	0%{
-		opacity: 0;
-	}
-	80%{
-		opacity: 0;
-		right: -120px;
-	}
-	100%{
-		opacity: 1;
-		right: 0px;
-	}
-}
-
-.transparent-glass{
-	background-color: rgba(33, 33, 33, 0.9);
-	border-radius: 12px;
-}
-
-.text-logo{
-	display: block;
-	margin: 12% auto;
-	height: 250px;
-	width: 350px;
-	background-color: grey;
-	text-align: center;
-	font-weight: bolder;
-	font-size: 180px;
-	border-radius: 25px;
-	border-left: 1px solid white;
-	border-top: 1px solid white;
-	box-shadow: 12px 12px 34px 13px rgba(0, 0, 0, 0.5);
-	-webkit-text-fill-color: #7FFF68;
-	-webkit-text-stroke: 2px black;/*(N.A, N.A) available on:https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke)*/
-	text-shadow: 1px 1px 1px red,
-				 2px 2px 1px red,
-				 3px 3px 1px red,
-				 4px 4px 1px red,
-				 5px 5px 1px red,
-				 6px 6px 1px red,
-				 7px 7px 1px red,
-				 8px 8px 14px rgba(0, 0, 0, 0.7),
-				 9px 9px 18px rgba(0, 0, 0, 0.6),
-				 10px 10px 23px rgba(0, 0, 0, 0.5),
-				 11px 11px 27px rgba(0, 0, 0, 0.4);
-	position: relative;
-	animation-name: logo-apperance;
-	animation-duration: 8s;
-	animation-iteration-count: 1;
-	overflow: hidden;
-}
-
-@keyframes logo-apperance{
-	0%{
-		opacity: 0;
-	}
-	65%{
-		opacity: 0;
-		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke: 0px;
-		text-shadow: none;
-	}
-	75%{
-		opacity: 1;
-		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke: 0px;
-		text-shadow: none;
-
-	}
-	80%{
-		opacity: 1;
-		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke: 2px black;
-		text-shadow: none;
-
-	}
-	90%{
-		opacity: 1;
-		-webkit-text-fill-color: #7FFF68;
-		-webkit-text-stroke: 2px black;
-		text-shadow: none;
-	}
-	100%{
-		opacity: 1;
-		-webkit-text-stroke: 2px black;
-		-webkit-text-fill-color: #7FFF68;
-		text-shadow: 1px 1px 1px red,
-					 2px 2px 1px red,
-					 3px 3px 1px red,
-					 4px 4px 1px red,
-					 5px 5px 1px red,
-					 6px 6px 1px red,
-					 7px 7px 1px red,
-					 8px 8px 14px rgba(0, 0, 0, 0.7),
-					 9px 9px 18px rgba(0, 0, 0, 0.6),
-					 10px 10px 23px rgba(0, 0, 0, 0.5),
-					 11px 11px 27px rgba(0, 0, 0, 0.4);
-		opacity: 1;
-	}/*(kjeznach, NA) concept of word animation*/
-}
-
-/*Styling of portfolio page*/
-.work-demonstration-heading{
-	margin: 20px 0;
 	padding: 30px 0;
-	background-color: rgba(33, 33, 33, 0.9);
-	border-radius: 12px;
 	text-align: center;
-	font-size: 50px;
-	-webkit-text-fill-color: transparent;
+	color: yellow;
+	-webkit-text-fill-color: rgba(0, 0, 0, 0);
 	-webkit-text-stroke: 2px yellow;
 }
-.work-demonstration-heading span{
-	display: block;
-	position: relative;
-	animation-name: rotation-apperance;
-	animation-duration: 4.4s;
-	animation-iteration-count: 1;
 
-}
-.project{
+.contact-main-container{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	text-align: center;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 20px;
+	border-radius: 12px;
+	grid-gap: 20px;
+}
+form{
 	background-color: rgba(33, 33, 33, 0.9);
 	border-radius: 12px;
-	padding: 20px;
+}
+form h2{
+	text-align: center;
+	color: white;
+	margin: 22px 0;
+	padding: 0;
+	font-size: 35px;
+}
+fieldset{
+	text-align: center;
+	color: white;
+	border: none;
+}
+.grid-input-element{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+	
+}
+.grid-input-element div input, textarea, input{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea{
+	margin-bottom: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	box-shadow: inset 0px 1px 4px rgba(0, 290, 290, 1),
+				0px 1px 4px rgba(0, 290, 290, 1);
+	border: 2px solid rgba(0, 290, 290, 1);
+	border-radius: 6px;
+	padding: 8px;
+	color: white;
+	width: 85%;
 
 }
-.project div{
-	width: 150px;
-	background-color: rgba(193, 233, 133, 0.6);
-	margin: 10px;
-	padding: 80px 0;
-	transition: transform 0.4s, color 0.4s;
+textarea{
+	width: 85%;
+	height: 200px;
 }
-.project div:nth-child(1){
-	animation-name: work-appears;
-	animation-duration: 5.8s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(2){
-	animation-name: work-appears;
-	animation-duration: 5.9s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(3){
-	animation-name: work-appears;
-	animation-duration: 6s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(4){
-	animation-name: work-appears;
-	animation-duration: 6.1s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(5){
-	animation-name: work-appears;
-	animation-duration: 6.2s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(6){
-	animation-name: work-appears;
-	animation-duration: 6.3s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(7){
-	animation-name: work-appears;
-	animation-duration: 6.4s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(8){
-	animation-name: work-appears;
-	animation-duration: 6.5s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(9){
-	animation-name: work-appears;
-	animation-duration: 6.6s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(10){
-	animation-name: work-appears;
-	animation-duration: 6.7s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(11){
-	animation-name: work-appears;
-	animation-duration: 6.8s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(12){
-	animation-name: work-appears;
-	animation-duration: 6.9s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(13){
-	animation-name: work-appears;
-	animation-duration: 7s;
-	animation-iteration-count: 1;
-}
-.project div:nth-child(14){
-	animation-name: work-appears;
-	animation-duration: 7.1s;
-	animation-iteration-count: 1;
-}
-@keyframes work-appears{
-	0%{
-		opacity: 0;
-	}
-	50%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
-}
-@keyframes rotation-apperance{
-	0%{
-		opacity: 0;
-	}
-	50%{
-		opacity: 0;
-		transform: rotateY(180deg);
-	}
-	100%{
-		opacity: 1;
-		transform: rotateX(0deg);
-	}
-}
-.project div:hover{
-	transform: scale(1.1, 1.1);
+input::placeholder{
 	color: white;
+	font-size: 18px;
 }
-/*Styling of contact page starts*/
-.form-card-container h2{
+.submit{
+	background-color: rgba(0, 290, 290, 0.5);
+	border: none;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.submit:hover{
+	background-color: rgba(0,260, 260, 1);
+	color: black;
+}
+textarea::placeholder{
+	color: white;
+	font-size: 18px;
+}
+.info-card{
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
+	color: white;
+	padding: 0 30px;
+
+}
+.info-card h2{
+	text-align: center;
+	margin: 22px 0;
+	font-size: 35px;
+}
+.info-card h3{
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	color: rgba(0, 260, 260, 1);
+}
+.info-card p{
+	margin: 0 0 25px 0;
+	padding: 0;
+	font-size: 25px;
+}
+
+
+
+
+/*.form-card-container h2{
 	margin: 0;
 	padding: 30px 0;
 	background-color: rgba(0, 0, 0, 0.3);
@@ -533,43 +334,7 @@ img{
 	height: 40px;
 	text-transform: uppercase;
 }
-/*Styling od CV page*/
-h2{
-	font-size: 30px;
-}
-p{
-	font-size: 20px;
-}
-.cv{
-	padding: 0 30px;
-}
-.cv-heading h1:nth-child(1){
-	text-align: center;
-	font-size: 45px;
-}
-.cv-heading h2:nth-child(2){
-	text-align: center;
-}
-.cv-heading h2:nth-child(3){
-	text-align: center;
-}
-h1, h2, p{
-	margin: 0;
-	padding: 0;
-}
-.cv div{
-	margin: 0 0 30px 0;
-}
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
