@@ -603,8 +603,25 @@ textarea::placeholder{
 	margin: 0 0 30px 0;
 }
 
-
-
+/*Styling of report page*/
+.report{
+	margin: 20px 0;
+	padding: 30px;
+	background-color: rgba(33, 33, 33, 0.9);
+	border-radius: 12px;
+	color: white;
+}
+.report h1{
+	text-align: center;
+}
+.scr-1{
+	height: 200px;
+	width: 300px;
+	
+}
+.portfolio-design{
+	clear: both;
+}
 
 
 
