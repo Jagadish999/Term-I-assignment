@@ -24,8 +24,10 @@ function show(){
 
 	var clickonham2 = document.getElementById('ham-2');
 	clickonham2.addEventListener('click', selectafter);
-}
+}//(NA, NA)Available on:https:https://www.w3schools.com/jsref/met_element_setattribute.asp
 
 
 
 document.addEventListener('DOMContentLoaded', show);
+//Refrences:
+//N.A (N.A) website. Available: https://www.w3schools.com/

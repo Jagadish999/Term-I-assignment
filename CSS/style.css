@@ -135,7 +135,7 @@ a{
 	padding: 30px 0;
 	text-align: center;
 	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 1.5px yellow;
+	-webkit-text-stroke: 1.5px yellow;/*(N.A, N.A) available on:https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke)*/
 	animation-name: shown-slowly;
 	animation-duration: 3.4s;
 	animation-iteration-count: 1;
@@ -149,7 +149,7 @@ a{
 	}
 	100%{
 		-webkit-text-stroke: 1.5px yellow;
-	}
+	}/*(N.A, N.A) available on:https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke)*/
 }
 .content{
 	padding: 40px;
@@ -445,7 +445,7 @@ a{
 	text-align: center;
 	color: yellow;
 	-webkit-text-fill-color: rgba(0, 0, 0, 0);
-	-webkit-text-stroke: 2px yellow;
+	-webkit-text-stroke: 2px yellow;/*(N.A, N.A) available on:https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke)*/
 	animation-name: work-appears;
 	animation-duration: 5s;
 	animation-iteration-count: 1;
@@ -494,7 +494,7 @@ fieldset{
 input, textarea{
 	margin-bottom: 10px;
 	background-color: rgba(0, 0, 0, 0);
-	box-shadow: inset 0px 1px 4px rgba(0, 290, 290, 1),
+	box-shadow: inset 0px 1px 4px rgba(0, 290, 290, 1),/*(Chris Coyier, 2009) available on:https://css-tricks.com/snippets/css/css-box-shadow/*/
 				0px 1px 4px rgba(0, 290, 290, 1);
 	border: 2px solid rgba(0, 290, 290, 1);
 	border-radius: 6px;
@@ -780,5 +780,7 @@ Available: https://www.youtube.com/watch?v=RPF-Dt737BA&t=218s(2021)
 N.A (N.A) Website. Available: https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke
 
 N.A (N.A) website. Available: https://www.w3schools.com/css/css_grid.asp;
+
+(Chris Coyier, 2009) websit available on:https://css-tricks.com/snippets/css/css-box-shadow/
 
 */
